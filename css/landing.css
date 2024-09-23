@@ -7,7 +7,7 @@
 }
 
 body{
-    cursor: url(/iconos/11.webp), auto;
+    cursor: url( https://dkvs.github.io/worskpace/img/11.webp), auto;
     background-clip: var(--clip, border-box);
     background-origin: var(--origin, padding-box);
  }
@@ -98,42 +98,42 @@ nav{
 
 .ab {
     grid-area: ab;
-    background: url(/iconos/about-icon.svg) no-repeat;
+    background: url( https://dkvs.github.io/worskpace/img/about-icon.svg) no-repeat;
   }
 
 .exper {
         grid-area: exper;
-        background: url(/iconos/experience-icon.svg) no-repeat;
+        background: url( https://dkvs.github.io/worskpace/img/experience-icon.svg) no-repeat;
 }
 
 
 .educ {
     grid-area: educ;
-    background: url(/iconos/education-icon.svg) no-repeat;
+    background: url( https://dkvs.github.io/worskpace/img/education-icon.svg) no-repeat;
 }
 
 
 .ski {
     grid-area: ski;
-    background: url(/iconos/skills-icon.svg) no-repeat;
+    background: url( https://dkvs.github.io/worskpace/img/skills-icon.svg) no-repeat;
 }
 
 
 .ctf {
         grid-area: ctf;
-        background: url(/iconos/ctfs-icon.svg) no-repeat;
+        background: url( https://dkvs.github.io/worskpace/img/ctfs-icon.svg) no-repeat;
 }
 
 
 .cont {
     grid-area: cont;
-    background: url(/iconos/contact-icon.svg) no-repeat;
+    background: url( https://dkvs.github.io/worskpace/img/contact-icon.svg) no-repeat;
 }
 
 
 .aboutcontenedor{
   height: 100vh;
-  background-image: url(/img/about-background.png);
+  background-image: url( https://dkvs.github.io/worskpace/img/about-background.png);
   background-position: 50%;
   background-size: cover;  
   margin: 0px auto;
@@ -166,7 +166,7 @@ nav{
 
 .experiencecontenedor{
   height: 100vh;
-  background-image: url(/img/experience-background.png);
+  background-image: url( https://dkvs.github.io/worskpace/img/experience-background.png);
   background-position: 50%;
   background-size: cover;  
   display: flex;
@@ -199,7 +199,7 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('/img/hero-background.png');
+  background-image: url(' https://dkvs.github.io/worskpace/img/hero-background.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -243,7 +243,7 @@ nav{
 
 .educationcontenedor{
   height: 100vh;
-  background-image: url(/img/education-background.png);
+  background-image: url( https://dkvs.github.io/worskpace/img/education-background.png);
   background-position: 50%;
   background-size: cover;  
   display: flex;
@@ -297,7 +297,7 @@ grid-area: edu4;
 
 .skillscontenedor {
   height: 100vh;
-  background-image: url(/img/skills-background.jpg);
+  background-image: url( https://dkvs.github.io/worskpace/img/skills-background.jpg);
   background-position: 50%;
   background-size: cover;  
   margin: 0px auto;
@@ -363,53 +363,53 @@ grid-area: edu4;
 
 .linux {
   grid-area: linux;
-  background: url(/iconos/linux.svg) no-repeat;
+  background: url( https://dkvs.github.io/worskpace/img/linux.svg) no-repeat;
 }
 
 .windows {
   grid-area: windows;
-  background: url(/iconos/windows.svg) no-repeat;
+  background: url( https://dkvs.github.io/worskpace/img/windows.svg) no-repeat;
 }
 
 .sql {
   grid-area: sql;
-  background: url(/iconos/sql.svg) no-repeat;
+  background: url( https://dkvs.github.io/worskpace/img/sql.svg) no-repeat;
 }
 
 .python {
   grid-area: python;
-  background: url(/iconos/python.svg) no-repeat;
+  background: url( https://dkvs.github.io/worskpace/img/python.svg) no-repeat;
 }
 
 .bash {
   grid-area: bash;
-  background: url(/iconos/bash.svg) no-repeat;
+  background: url( https://dkvs.github.io/worskpace/img/bash.svg) no-repeat;
 }
 
 .siem {
   grid-area: siem;
-  background: url(/iconos/siem.svg) no-repeat;
+  background: url( https://dkvs.github.io/worskpace/img/siem.svg) no-repeat;
 }
 
 .nmap {
   grid-area: nmap;
-  background: url(/iconos/nmap.svg) no-repeat;
+  background: url( https://dkvs.github.io/worskpace/img/nmap.svg) no-repeat;
 }
 
 .wireshark {
   grid-area: wireshark;
-  background: url(/iconos/wireshark.svg) no-repeat;
+  background: url( https://dkvs.github.io/worskpace/img/wireshark.svg) no-repeat;
 }
 
 .ctfspill {
   grid-area: ctfspill;
-  background: url(/iconos/ctfs.svg) no-repeat;
+  background: url( https://dkvs.github.io/worskpace/img/ctfs.svg) no-repeat;
 }
 
 
 .ctfscontenedor{
   height: 100vh;
-  background-image: url(/img/ctfs-background.png);
+  background-image: url( https://dkvs.github.io/worskpace/img/ctfs-background.png);
   background-position: 50%;
   background-size: cover;  
   display: flex;
@@ -561,7 +561,7 @@ grid-area: edu4;
 
 /* .contactontenedor{
   height: 100vh;
-  background-image: url(/img/education-background.png);
+  background-image: url( https://dkvs.github.io/worskpace/img/education-background.png);
   background-position: 50%;
   background-size: cover;  
   display: flex;
@@ -664,7 +664,7 @@ footer {
 
   .aboutcontenedor{
     display: flex;
-    background-image: url(/img/about-background.png);
+    background-image: url( https://dkvs.github.io/worskpace/img/about-background.png);
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;

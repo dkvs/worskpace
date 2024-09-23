@@ -1,0 +1,779 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+    cursor: url(/iconos/11.webp), auto;
+    background-clip: var(--clip, border-box);
+    background-origin: var(--origin, padding-box);
+ }
+
+
+ header {
+  position: sticky;
+  top: 0;
+}
+
+
+nav{
+  position: absolute;
+  
+}
+
+.boton-contenedor{
+  display: flex;
+  flex-direction: column-reverse;
+  text-decoration: none;
+}
+
+.boton{
+  background-color: #102638;
+  color: #57FA7B;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  padding: 8px 10px 8px 10px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 1rem;
+  cursor:pointer;
+}
+
+
+.boton:hover {
+  background-color: #57fa7aae;
+  color: white;
+}
+
+.active:focus {
+  background: yellow;
+  color: white;
+
+}
+
+
+
+
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('/ovillo.gif') 50% 50% no-repeat rgb(254,222,222);
+}
+
+
+.principal{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    display: grid;
+    justify-content: center;
+    width: 50%;
+    margin: 0px auto;
+    padding-top: 10px;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "ab exper educ ski ctf cont";  
+    grid-column-gap: 5rem;
+    grid-row-gap: 0px;
+}
+
+.icono{
+  width: 100px;
+  height: 100px;
+}
+
+
+.ab {
+    grid-area: ab;
+    background: url(/iconos/about-icon.svg) no-repeat;
+  }
+
+.exper {
+        grid-area: exper;
+        background: url(/iconos/experience-icon.svg) no-repeat;
+}
+
+
+.educ {
+    grid-area: educ;
+    background: url(/iconos/education-icon.svg) no-repeat;
+}
+
+
+.ski {
+    grid-area: ski;
+    background: url(/iconos/skills-icon.svg) no-repeat;
+}
+
+
+.ctf {
+        grid-area: ctf;
+        background: url(/iconos/ctfs-icon.svg) no-repeat;
+}
+
+
+.cont {
+    grid-area: cont;
+    background: url(/iconos/contact-icon.svg) no-repeat;
+}
+
+
+.aboutcontenedor{
+  height: 100vh;
+  background-image: url(/img/about-background.png);
+  background-position: 50%;
+  background-size: cover;  
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: 'acercade .'
+                        'acercade .';
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+ 
+}
+
+.acercade {
+  grid-area: acercade;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  background-color: #102638;
+  background: linear-gradient(140deg, #102638, 85%, #57FA7B);
+  border-top-left-radius: 1.8em;
+  border-bottom-left-radius: 1.8em;
+  color:white;
+  line-height: 2; 
+  padding: 4rem;
+  margin-left: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+
+.experiencecontenedor{
+  height: 100vh;
+  background-image: url(/img/experience-background.png);
+  background-position: 50%;
+  background-size: cover;  
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+ 
+}
+
+.experience {
+  width: 80%;  
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  margin-left: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-radius: 25px;
+  color:white;
+  font-family: 'Fira Sans';
+  font-weight: 200;  
+  line-height: 2;
+  background-color: #102638; /* For browsers that do not support gradients */
+  background: linear-gradient(167deg, #57FA7B, #102638 37%);  
+  border-radius: 25px;
+  color:white;
+}
+
+.hero{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/img/hero-background.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.text-title{
+  font-family:'Montserrat';
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.title{
+  letter-spacing: 0.1rem;
+  font-family:'Montserrat';
+  font-weight: 600;
+}
+
+.subtitle{
+  font-family:'Montserrat';
+  font-weight: 200;
+  color: #57FA7B;
+  font-size: 1.5rem;
+}
+
+.text-block{
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.title-exp{
+  font-size: 1.2rem;
+}
+
+.text-content{
+  font-size: 1rem;
+
+}
+
+
+.educationcontenedor{
+  height: 100vh;
+  background-image: url(/img/education-background.png);
+  background-position: 50%;
+  background-size: cover;  
+  display: flex;
+  justify-content: center;
+}
+
+.education {
+  width: 80%;  
+  display: flex;
+   flex-direction: column;
+  padding: 4rem;
+  margin-left: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to top, #102638, 90%,#57FA7B); 
+  border-radius: 25px;
+  color:white;
+  font-family: 'Fira Sans';
+  font-weight: 200;  
+  line-height: 2;
+}
+
+.gridedu{  
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: 'edu1 edu2'
+                        'edu3 edu4';
+  grid-column-gap: 5rem;
+  grid-row-gap: 4rem;
+  justify-content: center;
+
+}
+
+.edu1{
+grid-area: edu1;
+}
+
+.edu2{
+grid-area: edu2;
+}
+
+.edu3{
+grid-area: edu3;
+}
+
+.edu4{
+grid-area: edu4;
+}
+
+.skillscontenedor {
+  height: 100vh;
+  background-image: url(/img/skills-background.jpg);
+  background-position: 50%;
+  background-size: cover;  
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: '. skillscontenedor'
+                      '. skillscontenedor';
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  justify-content: end;
+  justify-items: end;
+}
+
+.sskillscontenedorkills{
+  grid-area: skillscontenedor;
+}
+
+
+
+.skills {
+  width: 80%;  
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  margin-right: 2.9rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to top, #102638, 90%,#57FA7B); 
+  color:white;
+  font-family: 'Fira Sans';
+  font-weight: 200;  
+  line-height: 2;
+  border-top-right-radius: 1.8em;
+  border-bottom-right-radius: 1.8em;
+}
+
+.skillsgrid{
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "linux windows windows"
+                      "sql python bash"
+                      "siem . ."
+                      "nmap wireshark ."
+                      "ctfspill . .";
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  justify-items: start;
+}
+
+.pills{
+  width: 180px;
+  height: 45px;
+}
+
+
+.pills2{
+  width: 262px;
+  height: 49px;
+}
+
+.linux {
+  grid-area: linux;
+  background: url(/iconos/linux.svg) no-repeat;
+}
+
+.windows {
+  grid-area: windows;
+  background: url(/iconos/windows.svg) no-repeat;
+}
+
+.sql {
+  grid-area: sql;
+  background: url(/iconos/sql.svg) no-repeat;
+}
+
+.python {
+  grid-area: python;
+  background: url(/iconos/python.svg) no-repeat;
+}
+
+.bash {
+  grid-area: bash;
+  background: url(/iconos/bash.svg) no-repeat;
+}
+
+.siem {
+  grid-area: siem;
+  background: url(/iconos/siem.svg) no-repeat;
+}
+
+.nmap {
+  grid-area: nmap;
+  background: url(/iconos/nmap.svg) no-repeat;
+}
+
+.wireshark {
+  grid-area: wireshark;
+  background: url(/iconos/wireshark.svg) no-repeat;
+}
+
+.ctfspill {
+  grid-area: ctfspill;
+  background: url(/iconos/ctfs.svg) no-repeat;
+}
+
+
+.ctfscontenedor{
+  height: 100vh;
+  background-image: url(/img/ctfs-background.png);
+  background-position: 50%;
+  background-size: cover;  
+  display: flex;
+  justify-content: center;
+  margin: 0px auto; 
+}
+
+.ctfs {
+  width: 80%;  
+  display: flex;
+   flex-direction: column;
+  padding: 4rem;
+   /* margin-left: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem; */
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to top, #102638, 90%,#57FA7B); 
+  border-radius: 25px;
+  color:white;
+  font-family: 'Fira Sans';
+  font-weight: 200;  
+  line-height: 2;
+}
+
+.ctfsgrid {
+    display: grid;
+    grid-template-columns: 140px auto 140px;
+    grid-template-rows: auto;
+    grid-template-areas: 'maquina tec write'
+                          'tentacle t1 t2'
+                          'validation t3 t4'
+                          'mischief t5 t6'
+                          'reddish t7 t8'
+                          'return t9 t10'
+                          'horizontall t11 t12'
+                          'pressed t13 t14';
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+
+
+.maquina {
+  grid-area: maquina;
+}
+
+.tec {
+  grid-area: tec;
+}
+
+.write {
+  grid-area: write;
+}
+
+.tentacle {
+  grid-area: tentacle;
+}
+
+.validation {
+  grid-area: validation;
+}
+
+.mischief {
+  grid-area: mischief;
+}
+
+.reddish {
+  grid-area: reddish;
+}
+
+.return {
+  grid-area: return;
+}
+
+.horizontall {
+  grid-area: horizontall;
+}
+
+.pressed {
+  grid-area: pressed;
+}
+
+.t1 {
+  grid-area: t1;
+}
+
+.t2 {
+  grid-area: t2;
+}
+
+.t3 {
+  grid-area: t3;
+}
+
+.t4 {
+  grid-area: t4;
+}
+
+
+.t5 {
+  grid-area: t5;
+}
+
+.t6 {
+  grid-area: t6;
+}
+
+
+.t7 {
+  grid-area: t7;
+}
+
+.t8 {
+  grid-area: t8;
+}
+
+
+.t9 {
+  grid-area: t9;
+}
+
+.t10 {
+  grid-area: t10;
+}
+
+
+.t11 {
+  grid-area: t11;
+}
+
+.t12 {
+  grid-area: t12;
+}
+
+.t13 {
+  grid-area: t13;
+}
+
+.t14 {
+  grid-area: t14;
+}
+
+.textable{
+  background-color: orange;
+}
+
+
+
+
+/* .contactontenedor{
+  height: 100vh;
+  background-image: url(/img/education-background.png);
+  background-position: 50%;
+  background-size: cover;  
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+ 
+}
+
+.contact {
+  width: 80%;  
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  margin-left: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  border-radius: 25px;
+  color:white;
+  font-family: 'Fira Sans';
+  font-weight: 200;  
+  line-height: 2;
+}
+ */
+
+
+
+@media only screen and (max-width: 900px) {
+
+  header {
+    position:inherit ;
+    top: 0;
+  }
+
+
+ }
+
+
+
+
+
+
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+.footer{
+    width: 90%;
+	  margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+	  grid-template-rows: repeat(1, auto);
+    grid-template-areas: 
+        "back";
+    gap: 10px;
+}
+
+
+footer {
+    color: blanchedalmond;
+    padding: 20px
+}
+
+.back{
+    grid-area: back;
+}
+
+
+
+.desplazarse-hacia-arriba {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.flecha-arriba {
+  width: 3rem;
+  height: 3rem;
+}
+
+
+@media screen and (max-width: 720px) {
+
+  .text-title{
+    font-family:'Montserrat';
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutcontenedor{
+    display: flex;
+    background-image: url(/img/about-background.png);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+   
+  }
+  
+  .acercade {
+    font-family: 'Fira Sans';
+    font-weight: 200;
+    background-color: #102638;
+    background: linear-gradient(140deg, #0c8bf3, 85%, #57FA7B);
+    border-radius: 10px;
+    color:white;
+    line-height: 2; 
+    padding: 10px 20px 10px 20px;
+
+  }
+  
+  .experiencecontenedor{
+    display: flex;
+    height: 100vh;
+
+    justify-content: center;
+    margin: 0px auto;
+   
+  }
+  
+  .experience {
+    width: 80%;  
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 20px;
+    border-radius: 25px;
+    background-color: #102638; /* For browsers that do not support gradients */
+    background: linear-gradient(167deg, #57FA7B, #102638 37%);  
+    border-radius: 25px;
+    color:white;
+  }
+
+
+  .gridedu{  
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 'edu1 edu2'
+                          'edu3 edu4';
+    grid-column-gap: 5rem;
+    grid-row-gap: 2rem;
+    justify-content: center;
+  
+  }
+
+  .educationcontenedor{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .education {
+    width: 80%;  
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 20px;
+    background: linear-gradient(to top, #102638, 90%,#57FA7B); 
+    border-radius: 25px;
+    color:white;
+    font-family: 'Fira Sans';
+  }
+  
+  .skillscontenedor {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: 'skillscontenedor';
+    justify-content: center;
+    justify-items: center;
+  }
+  
+  
+  .skills {
+    width: 80%;  
+    display: flex;
+    flex-direction: column;
+    font-weight: 200;  
+    line-height: 2;
+    border-radius: 25px;
+    padding: 10px 20px 10px 20px;
+    margin-left: 80px;
+
+  }
+  
+  .skillsgrid{
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "linux windows"
+                        "sql python"
+                        "bash siem"
+                        "nmap wireshark"
+                        "ctfspill .";
+    grid-column-gap: 0rem;
+    grid-row-gap: 1rem;
+    justify-items: start;
+  }
+
+
+
+}
+

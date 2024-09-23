@@ -811,8 +811,8 @@ footer {
   }
 
 header{
-	display:none;
-}
+        display: none;
+    }
 
 .ctfscontenedor{
   height: 100vh;

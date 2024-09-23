@@ -79,6 +79,7 @@ nav{
 
 .contenedor {
     display: grid;
+    max-height: 100%;
     justify-content: center;
     width: 50%;
     margin: 0px auto;
@@ -138,6 +139,7 @@ nav{
   background-size: cover;  
   margin: 0px auto;
   display: grid;
+  max-height: 100%;
   grid-template-columns: 50%;
   grid-template-rows: repeat(2, auto);
   grid-template-areas: 'acercade .'
@@ -159,8 +161,8 @@ nav{
   line-height: 2; 
   padding: 4rem;
   margin-left: 3rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  max-height: auto;  
+
 }
 
 
@@ -176,13 +178,11 @@ nav{
 }
 
 .experience {
-  width: 80%;  
+  width: 80%;
+  max-height: auto;  
   display: flex;
   flex-direction: column;
   padding: 4rem;
-  margin-left: 3rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   border-radius: 25px;
   color:white;
   font-family: 'Fira Sans';
@@ -248,27 +248,29 @@ nav{
   background-size: cover;  
   display: flex;
   justify-content: center;
+  margin: 0px auto;
 }
 
 .education {
-  width: 80%;  
+  width: 80%;
+  max-height: auto;  
   display: flex;
-   flex-direction: column;
+  flex-direction: column;
   padding: 4rem;
-  margin-left: 3rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to top, #102638, 90%,#57FA7B); 
   border-radius: 25px;
   color:white;
   font-family: 'Fira Sans';
   font-weight: 200;  
   line-height: 2;
+  background-color: #102638; /* For browsers that do not support gradients */
+  background: linear-gradient(167deg, #57FA7B, #102638 37%);  
+  border-radius: 25px;
+  color:white;
 }
 
 .gridedu{  
   display: grid;
+  max-height: 100%;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
   grid-template-areas: 'edu1 edu2'
@@ -302,6 +304,7 @@ grid-area: edu4;
   background-size: cover;  
   margin: 0px auto;
   display: grid;
+  max-height: 100%;
   grid-template-columns: 50%;
   grid-template-rows: repeat(2, auto);
   grid-template-areas: '. skillscontenedor'
@@ -324,14 +327,12 @@ grid-area: edu4;
   flex-direction: column;
   padding: 4rem;
   margin-right: 2.9rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  max-height: auto;  
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(to top, #102638, 90%,#57FA7B); 
   color:white;
   font-family: 'Fira Sans';
   font-weight: 200;  
-  line-height: 2;
   border-top-right-radius: 1.8em;
   border-bottom-right-radius: 1.8em;
 }
@@ -346,7 +347,6 @@ grid-area: edu4;
                       "nmap wireshark ."
                       "ctfspill . .";
   grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
   justify-items: start;
 }
 
@@ -415,28 +415,13 @@ grid-area: edu4;
   display: flex;
   justify-content: center;
   margin: 0px auto; 
-}
-
-.ctfs {
-  width: 80%;  
-  display: flex;
-   flex-direction: column;
-  padding: 4rem;
-   /* margin-left: 3rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem; */
-  font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to top, #102638, 90%,#57FA7B); 
-  border-radius: 25px;
-  color:white;
-  font-family: 'Fira Sans';
-  font-weight: 200;  
-  line-height: 2;
+  align-items: center;
 }
 
 .ctfsgrid {
     display: grid;
-    grid-template-columns: 140px auto 140px;
+    width: 80%;
+    grid-template-columns: AUTO;
     grid-template-rows: auto;
     grid-template-areas: 'maquina tec write'
                           'tentacle t1 t2'
@@ -446,9 +431,15 @@ grid-area: edu4;
                           'return t9 t10'
                           'horizontall t11 t12'
                           'pressed t13 t14';
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
+    grid-column-gap: 1rem;
+    grid-row-gap: 2rem;
+    border: 2px solid #57FA7B;
+    border-radius: 10px;
+    background: linear-gradient(to top, #102638, 90%,#57FA7B);
+    color:white;
+  font-family: 'Fira Sans';
+  font-weight: 200;     
+  }
 
 
 
@@ -552,41 +543,87 @@ grid-area: edu4;
   grid-area: t14;
 }
 
-.textable{
-  background-color: orange;
+.bordetable{
+  border: 2px solid #57FA7B;
+
 }
 
 
 
 
-/* .contactontenedor{
+.contactcontenedor{
   height: 100vh;
-  background-image: url(https://dkvs.github.io/worskpace/img/education-background.png);
+  background-image: url(https://dkvs.github.io/worskpace/img/contact-background.png);
   background-position: 50%;
   background-size: cover;  
-  display: flex;
-  justify-content: center;
   margin: 0px auto;
+  display: grid;
+  grid-template-columns: 50%;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: 'contact .'
+                        'contact .';
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
  
 }
 
 .contact {
-  width: 80%;  
-  display: flex;
-  flex-direction: column;
+  grid-area: contact;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  background-color: #102638;
+  background: linear-gradient(140deg, #102638, 85%, #57FA7B);
+  border-top-left-radius: 1.8em;
+  border-bottom-left-radius: 1.8em;
+  color:white;
+  line-height: 2; 
   padding: 4rem;
   margin-left: 3rem;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  font-family: 'Montserrat', sans-serif;
-  background-color: black;
-  border-radius: 25px;
-  color:white;
-  font-family: 'Fira Sans';
-  font-weight: 200;  
-  line-height: 2;
+  max-height: auto;  
+
 }
- */
+
+.socialicon{
+  width: 50px;
+  height: 50px;
+  padding-right: 20px;
+}
+
+.social-icons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social-title {
+  font-size: 1.4rem;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+.social-url{
+  font-size: 1.2rem;
+  font-family: 'Fira Sans';
+  font-weight: 400;
+  color: #57FA7B;
+}
+
+.git {
+    background: url(https://dkvs.github.io/worskpace/iconos/git.svg) no-repeat;
+  }
+
+  .linkedin {
+    background: url(https://dkvs.github.io/worskpace/iconos/linkedin.svg) no-repeat;
+  }
+
+  .tel {
+    background: url(https://dkvs.github.io/worskpace/iconos/tel.svg) no-repeat;
+  }
+
+  .mail {
+    background: url(https://dkvs.github.io/worskpace/iconos/mail.svg) no-repeat;
+  }
+
 
 
 
@@ -612,7 +649,7 @@ grid-area: edu4;
     }
   }
 
-.footer{
+/* .footer{
     width: 90%;
 	  margin: 20px auto;
     display: grid;
@@ -627,7 +664,7 @@ grid-area: edu4;
 footer {
     color: blanchedalmond;
     padding: 20px
-}
+} */
 
 .back{
     grid-area: back;
@@ -677,7 +714,7 @@ footer {
     font-family: 'Fira Sans';
     font-weight: 200;
     background-color: #102638;
-    background: linear-gradient(140deg, #0c8bf3, 85%, #57FA7B);
+    background: linear-gradient(140deg, #102638, 85%, #57FA7B);    
     border-radius: 10px;
     color:white;
     line-height: 2; 
@@ -738,7 +775,7 @@ footer {
   
   .skillscontenedor {
     height: 80vh;
-    display: grid;
+    display: none;
     grid-template-columns: 100%;
     grid-template-rows: repeat(1, auto);
     grid-template-areas: 'skillscontenedor';
@@ -755,7 +792,7 @@ footer {
     line-height: 2;
     border-radius: 25px;
     padding: 10px 20px 10px 20px;
-    margin-left: 80px;
+    margin-left: none;
 
   }
   
@@ -773,9 +810,65 @@ footer {
     justify-items: start;
   }
 
+header{
+}
 
+.ctfscontenedor{
+  height: 100vh;
+  background-image: url(https://dkvs.github.io/worskpace/img/ctfs-background.png);
+  background-position: 50%;
+  background-size: cover;  
+  display: flex;
+  justify-content: center;
+  margin: 0px auto; 
+}
+
+
+.ctfsgrid {
+  display: grid;
+  grid-template-columns: 140px auto 140px;
+  grid-template-rows: auto;
+  grid-template-areas: 'maquina tec write'
+                        'tentacle t1 t2'
+                        'validation t3 t4'
+                        'mischief t5 t6'
+                        'reddish t7 t8'
+                        'return t9 t10'
+                        'horizontall t11 t12'
+                        'pressed t13 t14';
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+  border: 2px solid #57FA7B;
+  border-radius: 10px;
+  }
+
+
+  .contactcontenedor{
+    display: flex;
+    background-image: url(https://dkvs.github.io/worskpace/img/contact-background.png);
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+   
+  }
+  
+  .contact {
+    font-family: 'Fira Sans';
+    font-weight: 200;
+    background-color: #102638;
+    background: linear-gradient(28dg, #102638, 85%, #57FA7B);    
+    border-radius: 10px;
+    color:white;
+    line-height: 2; 
+    padding: 10px 20px 10px 20px;
+
+  }
+  
 
 }
+
 
 
 

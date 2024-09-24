@@ -18,10 +18,15 @@ body{
   top: 0;
 }
 
+.menu-responsive{
+  position: sticky;
+  top: 1px;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 
-nav{
-  position: absolute;
-  
 }
 
 .boton-contenedor{
@@ -55,21 +60,6 @@ nav{
 
 }
 
-
-
-
-
-.loader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background: url('/ovillo.gif') 50% 50% no-repeat rgb(254,222,222);
-}
-
-
 .principal{
     display: flex;
     width: 100%;
@@ -86,7 +76,7 @@ nav{
     padding-top: 10px;
     grid-template-columns: repeat(6, auto);
     grid-template-rows: repeat(1, auto);
-    grid-template-areas: "ab exper educ ski ctf cont";  
+    grid-template-areas: "ab exper educ ski ctf cont";
     grid-column-gap: 5rem;
     grid-row-gap: 0px;
 }
@@ -99,7 +89,7 @@ nav{
 
 .ab {
     grid-area: ab;
-    background: url(https://dkvs.github.io/worskpace/iconos/about-icon.svg) no-repeat;
+    background: url(https://dkvs.github.io/worskpace/iconos/ver.svg) no-repeat;
   }
 
 .exper {
@@ -133,10 +123,9 @@ nav{
 
 
 .aboutcontenedor{
-  height: 100vh;
   background-image: url(https://dkvs.github.io/worskpace/img/about-background.png);
   background-position: 50%;
-  background-size: cover;  
+  background-size: cover;
   margin: 0px auto;
   display: grid;
   max-height: 100%;
@@ -146,7 +135,7 @@ nav{
                         'acercade .';
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
- 
+
 }
 
 .acercade {
@@ -158,44 +147,44 @@ nav{
   border-top-left-radius: 1.8em;
   border-bottom-left-radius: 1.8em;
   color:white;
-  line-height: 2; 
+  line-height: 2;
   padding: 4rem;
   margin-left: 3rem;
-  max-height: auto;  
+  max-height: auto;
+  align-content: center;
 
 }
 
 
 .experiencecontenedor{
-  height: 100vh;
   background-image: url(https://dkvs.github.io/worskpace/img/experience-background.png);
   background-position: 50%;
-  background-size: cover;  
+  background-size: cover;
   display: flex;
   justify-content: center;
   margin: 0px auto;
- 
+
 }
 
 .experience {
   width: 80%;
-  max-height: auto;  
+  max-height: auto;
   display: flex;
   flex-direction: column;
   padding: 4rem;
   border-radius: 25px;
   color:white;
   font-family: 'Fira Sans';
-  font-weight: 200;  
+  font-weight: 200;
   line-height: 2;
   background-color: #102638; /* For browsers that do not support gradients */
-  background: linear-gradient(167deg, #57FA7B, #102638 37%);  
+  background: linear-gradient(167deg, #57FA7B, #102638 37%);
   border-radius: 25px;
   color:white;
+  justify-content: center;
 }
 
 .hero{
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,10 +231,9 @@ nav{
 
 
 .educationcontenedor{
-  height: 100vh;
   background-image: url(https://dkvs.github.io/worskpace/img/education-background.png);
   background-position: 50%;
-  background-size: cover;  
+  background-size: cover;
   display: flex;
   justify-content: center;
   margin: 0px auto;
@@ -253,22 +241,23 @@ nav{
 
 .education {
   width: 80%;
-  max-height: auto;  
+  max-height: auto;
   display: flex;
   flex-direction: column;
   padding: 4rem;
   border-radius: 25px;
   color:white;
   font-family: 'Fira Sans';
-  font-weight: 200;  
+  font-weight: 200;
   line-height: 2;
   background-color: #102638; /* For browsers that do not support gradients */
-  background: linear-gradient(167deg, #57FA7B, #102638 37%);  
+  background: linear-gradient(167deg, #57FA7B, #102638 37%);
   border-radius: 25px;
   color:white;
+  justify-content: center;
 }
 
-.gridedu{  
+.gridedu{
   display: grid;
   max-height: 100%;
   grid-template-columns: repeat(2, auto);
@@ -297,57 +286,56 @@ grid-area: edu3;
 grid-area: edu4;
 }
 
-.skillscontenedor {
-  height: 100vh;
+.skillscontenedor{
   background-image: url(https://dkvs.github.io/worskpace/img/skills-background.jpg);
   background-position: 50%;
-  background-size: cover;  
+  background-size: cover;
   margin: 0px auto;
   display: grid;
   max-height: 100%;
   grid-template-columns: 50%;
   grid-template-rows: repeat(2, auto);
-  grid-template-areas: '. skillscontenedor'
-                      '. skillscontenedor';
+  grid-template-areas: '. contenidos'
+                       '. contenidos';
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
-  justify-content: end;
-  justify-items: end;
-}
-
-.sskillscontenedorkills{
-  grid-area: skillscontenedor;
+  color: white;
 }
 
 
 
-.skills {
-  width: 80%;  
-  display: flex;
-  flex-direction: column;
-  padding: 4rem;
-  margin-right: 2.9rem;
-  max-height: auto;  
-  font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(to top, #102638, 90%,#57FA7B); 
-  color:white;
-  font-family: 'Fira Sans';
-  font-weight: 200;  
-  border-top-right-radius: 1.8em;
-  border-bottom-right-radius: 1.8em;
+.contenidos {
+  grid-area: contenidos;
+  align-content: center;
 }
 
 .skillsgrid{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "linux windows windows"
-                      "sql python bash"
-                      "siem . ."
-                      "nmap wireshark ."
-                      "ctfspill . .";
-  grid-column-gap: 1rem;
-  justify-items: start;
+.skill1{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.skill2{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.skill3{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.skill4{
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 .pills{
@@ -362,59 +350,53 @@ grid-area: edu4;
 }
 
 .linux {
-  grid-area: linux;
   background: url(https://dkvs.github.io/worskpace/iconos/linux.svg) no-repeat;
 }
 
 .windows {
-  grid-area: windows;
   background: url(https://dkvs.github.io/worskpace/iconos/windows.svg) no-repeat;
 }
 
 .sql {
-  grid-area: sql;
   background: url(https://dkvs.github.io/worskpace/iconos/sql.svg) no-repeat;
 }
 
 .python {
-  grid-area: python;
   background: url(https://dkvs.github.io/worskpace/iconos/python.svg) no-repeat;
 }
 
 .bash {
-  grid-area: bash;
   background: url(https://dkvs.github.io/worskpace/iconos/bash.svg) no-repeat;
 }
 
 .siem {
-  grid-area: siem;
   background: url(https://dkvs.github.io/worskpace/iconos/siem.svg) no-repeat;
 }
 
 .nmap {
-  grid-area: nmap;
   background: url(https://dkvs.github.io/worskpace/iconos/nmap.svg) no-repeat;
 }
 
 .wireshark {
-  grid-area: wireshark;
   background: url(https://dkvs.github.io/worskpace/iconos/wireshark.svg) no-repeat;
 }
 
+.lenguages{
+  font-family: 'Fira Sans';
+}
+
 .ctfspill {
-  grid-area: ctfspill;
   background: url(https://dkvs.github.io/worskpace/iconos/ctfs.svg) no-repeat;
 }
 
 
 .ctfscontenedor{
-  height: 100vh;
   background-image: url(https://dkvs.github.io/worskpace/img/ctfs-background.png);
   background-position: 50%;
-  background-size: cover;  
+  background-size: cover;
   display: flex;
   justify-content: center;
-  margin: 0px auto; 
+  margin: 0px auto;
   align-items: center;
 }
 
@@ -438,7 +420,8 @@ grid-area: edu4;
     background: linear-gradient(to top, #102638, 90%,#57FA7B);
     color:white;
   font-family: 'Fira Sans';
-  font-weight: 200;     
+  font-weight: 200;
+  padding: 20px;
   }
 
 
@@ -552,10 +535,9 @@ grid-area: edu4;
 
 
 .contactcontenedor{
-  height: 100vh;
   background-image: url(https://dkvs.github.io/worskpace/img/contact-background.png);
   background-position: 50%;
-  background-size: cover;  
+  background-size: cover;
   margin: 0px auto;
   display: grid;
   grid-template-columns: 50%;
@@ -564,7 +546,7 @@ grid-area: edu4;
                         'contact .';
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
- 
+
 }
 
 .contact {
@@ -576,11 +558,11 @@ grid-area: edu4;
   border-top-left-radius: 1.8em;
   border-bottom-left-radius: 1.8em;
   color:white;
-  line-height: 2; 
+  line-height: 2;
   padding: 4rem;
   margin-left: 3rem;
-  max-height: auto;  
-
+  max-height: auto;
+  align-content: center;
 }
 
 .socialicon{
@@ -649,13 +631,25 @@ grid-area: edu4;
     }
   }
 
+  .text-block{
+    font-size: 1rem;
+  }
+
+  .title{
+    font-size: 1rem;
+  }
+
+  .title-exp{
+    font-size: 1rem;
+  }
+
 /* .footer{
     width: 90%;
 	  margin: 20px auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 	  grid-template-rows: repeat(1, auto);
-    grid-template-areas: 
+    grid-template-areas:
         "back";
     gap: 10px;
 }
@@ -687,6 +681,7 @@ footer {
 
 @media screen and (max-width: 720px) {
 
+
   .text-title{
     font-family:'Montserrat';
     color: white;
@@ -697,6 +692,8 @@ footer {
     align-content: center;
     justify-content: center;
     align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   .aboutcontenedor{
@@ -706,143 +703,98 @@ footer {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-
-   
+    height: auto;
   }
-  
+
   .acercade {
     font-family: 'Fira Sans';
     font-weight: 200;
     background-color: #102638;
-    background: linear-gradient(140deg, #102638, 85%, #57FA7B);    
-    border-radius: 10px;
+    background: linear-gradient(140deg, #102638, 85%, #57FA7B);
     color:white;
-    line-height: 2; 
-    padding: 10px 20px 10px 20px;
-
+    line-height: 2;
+    font-size: 10px;
+    margin: 0;
+    padding: 32px;  
+    border-radius: 0px;
   }
-  
+
   .experiencecontenedor{
     display: flex;
-    height: 100vh;
-
     justify-content: center;
     margin: 0px auto;
-   
-  }
-  
-  .experience {
-    width: 80%;  
-    display: flex;
     flex-direction: column;
-    padding: 10px 20px 10px 20px;
-    border-radius: 25px;
-    background-color: #102638; /* For browsers that do not support gradients */
-    background: linear-gradient(167deg, #57FA7B, #102638 37%);  
-    border-radius: 25px;
-    color:white;
-  }
-
-
-  .gridedu{  
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: 'edu1 edu2'
-                          'edu3 edu4';
-    grid-column-gap: 5rem;
-    grid-row-gap: 2rem;
+    flex-wrap: wrap;
+    align-content: center;
     justify-content: center;
-  
+    height: auto;
+
   }
 
-  .educationcontenedor{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .education {
-    width: 80%;  
-    display: flex;
-    flex-direction: column;
-    padding: 10px 20px 10px 20px;
-    background: linear-gradient(to top, #102638, 90%,#57FA7B); 
-    border-radius: 25px;
-    color:white;
-    font-family: 'Fira Sans';
-  }
-  
-  .skillscontenedor {
-    height: 80vh;
+  .ctfscontenedor{
     display: none;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(1, auto);
-    grid-template-areas: 'skillscontenedor';
-    justify-content: center;
-    justify-items: center;
-  }
-  
-  
-  .skills {
-    width: 80%;  
-    display: flex;
-    flex-direction: column;
-    font-weight: 200;  
-    line-height: 2;
-    border-radius: 25px;
-    padding: 10px 20px 10px 20px;
-    margin-left: none;
-
-  }
-  
-  .skillsgrid{
-  
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "linux windows"
-                        "sql python"
-                        "bash siem"
-                        "nmap wireshark"
-                        "ctfspill .";
-    grid-column-gap: 0rem;
-    grid-row-gap: 1rem;
-    justify-items: start;
   }
 
-header{
-        display: none;
-    }
 
-.ctfscontenedor{
-  height: 100vh;
-  background-image: url(https://dkvs.github.io/worskpace/img/ctfs-background.png);
-  background-position: 50%;
-  background-size: cover;  
-  display: flex;
-  justify-content: center;
-  margin: 0px auto; 
+.title{
+  font-size: 15px;
+
 }
 
+.pills {
+  width: 150px;
+  height: 40px;
+}
 
-.ctfsgrid {
-  display: grid;
-  grid-template-columns: 140px auto 140px;
-  grid-template-rows: auto;
-  grid-template-areas: 'maquina tec write'
-                        'tentacle t1 t2'
-                        'validation t3 t4'
-                        'mischief t5 t6'
-                        'reddish t7 t8'
-                        'return t9 t10'
-                        'horizontall t11 t12'
-                        'pressed t13 t14';
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
-  border: 2px solid #57FA7B;
-  border-radius: 10px;
+.pills2 {
+  width: 262px;
+  height: 32px;
+}
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px;
+    background-color: #102638; /* For browsers that do not support gradients */
+    background: linear-gradient(167deg, #57FA7B, #102638 37%);
+    color:white;
+    padding-right: 14px;
+    padding-left: 14px;  }
+
+
+  .educationcontenedor{
+    display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;  
+        margin: 0px auto;
+        flex-wrap: wrap;
+        align-content: center;
+      }
+
+  .education {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, #102638, 90%,#57FA7B);
+    border-radius: 0px;
+    color:white;
+    font-family: 'Fira Sans';
+    padding-right: 14px;
+    padding-left: 14px;  }
+
+   
+  .dot{
+    margin-bottom: 10px;
   }
 
+  .skillscontenedor{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, #102638, 90%,#57FA7B);
+  }
+  
 
   .contactcontenedor{
     display: flex;
@@ -852,23 +804,208 @@ header{
     align-content: center;
     justify-content: center;
 
-   
+
   }
-  
-  .contact {
+
+  .contenidos{
+    padding: 20px;
+
+  }
+   .contact {
     font-family: 'Fira Sans';
     font-weight: 200;
     background-color: #102638;
-    background: linear-gradient(28dg, #102638, 85%, #57FA7B);    
-    border-radius: 10px;
+    border-radius: 0px;
     color:white;
-    line-height: 2; 
-    padding: 10px 20px 10px 20px;
+    line-height: 2;
+    margin: 0;
+    padding: 20px;
+  } 
 
+  .social-url{
+    font-size: 15px;
+  }
+
+  .principal{
+    display: none;
+  }
+
+
+  .icono{
+    display: none;
+  }
+
+  .desplazarse-hacia-arriba {
+    right: 13.5%;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .aboutcontenedor {
+    height: 100vh;
+}
+
+.experiencecontenedor {
+  height: 100vh;
+}
+
+.hero {
+  height: 100vh;
+}
+
+.educationcontenedor {
+  height: 100vh;
+}
+
+.aboutcoskillscontenedorntenedor {
+  height: 100vh;
+}
+
+.ctfscontenedor {
+  height: 100vh;
+}
+
+.contactcontenedor {
+  height: 100vh;
+}
+
+.educationcontenedor {
+  height: 100vh;
+}
+
+
+.skillscontenedor{
+  height: 100vh;
+
+}
+
+
+}
+
+
+
+
+  /*menu responsive */
+  .menu-responsive {
+    background: #102638;
+    height: 60px;
+    position: sticky;
+    top: 1px;
+    width: 100%;
   }
   
 
-}
+  #menu {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+  
+   
+    ul {
+      max-height: 0;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 14px;
+    }
+  
+   
+    li {
+      display: block;
+      background: #102638;
+      text-transform: uppercase;
+      text-align: center;
+      border-bottom: 1px solid #57FA7B;
+  
+      a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 0 26px;
+        font-family: 'Fira Sans';
+  
+        &:active,
+        &:focus   {
+          color: #57FA7B;
+        }
+      }
+    }
+  
+  
+    .open-menu {
+      box-shadow: 0 1px 2px rgba(0,0,0,.5);
+      max-height: 400px;
+      transition: max-height .4s ease;
+    }
+  }
+  
+  
+  #nav-mobile {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    float: right;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: -60px;
+    opacity: 0.6;
+  
+   
+    &.nav-open {
+      opacity: 1;
+    }
+  
+    span {
+      display: block;
+      width: 60%;
+      margin: 4px auto;
+      height: 2px;
+      background: #57FA7B
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    #nav-mobile{ display: none; }
+  
+
+    #menu {
+      width: auto;
+      float: right;
+      top: 0;
+      position: relative;
+  
+      .open-menu {
+        box-shadow: none;
+      }
+  
+  
+      ul {
+        max-height: inherit;
+      }
+  
+  
+      li {
+        float: left;
+        border: 0;
+        background: transparent;
+  
+        a {
+          display: block;
+          color: #fff;
+          padding: 0 26px;
+          }
+        }
+      }
+    }
+  
+  
+  
+
+  /*fin menu responsive */
 
 
 

@@ -185,8 +185,8 @@ body{
 }
 
 .hero{
-  display: flex;
   height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-image: url('https://dkvs.github.io/worskpace/img/hero-background.png');
@@ -391,149 +391,11 @@ grid-area: edu4;
 }
 
 
-.ctfscontenedor{
-  background-image: url(https://dkvs.github.io/worskpace/img/ctfs-background.png);
-  background-position: 50%;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  margin: 0px auto;
-  align-items: center;
-}
-
-.ctfsgrid {
-    display: grid;
-    width: 80%;
-    grid-template-columns: AUTO;
-    grid-template-rows: auto;
-    grid-template-areas: 'maquina tec write'
-                          'tentacle t1 t2'
-                          'validation t3 t4'
-                          'mischief t5 t6'
-                          'reddish t7 t8'
-                          'return t9 t10'
-                          'horizontall t11 t12'
-                          'pressed t13 t14';
-    grid-column-gap: 1rem;
-    grid-row-gap: 2rem;
-    border: 2px solid #57FA7B;
-    border-radius: 10px;
-    background: linear-gradient(to top, #102638, 90%,#57FA7B);
-    color:white;
-  font-family: 'Fira Sans';
-  font-weight: 200;
-  padding: 20px;
-  }
-
-
-
-.maquina {
-  grid-area: maquina;
-}
-
-.tec {
-  grid-area: tec;
-}
-
-.write {
-  grid-area: write;
-}
-
-.tentacle {
-  grid-area: tentacle;
-}
-
-.validation {
-  grid-area: validation;
-}
-
-.mischief {
-  grid-area: mischief;
-}
-
-.reddish {
-  grid-area: reddish;
-}
-
-.return {
-  grid-area: return;
-}
-
-.horizontall {
-  grid-area: horizontall;
-}
-
-.pressed {
-  grid-area: pressed;
-}
-
-.t1 {
-  grid-area: t1;
-}
-
-.t2 {
-  grid-area: t2;
-}
-
-.t3 {
-  grid-area: t3;
-}
-
-.t4 {
-  grid-area: t4;
-}
-
-
-.t5 {
-  grid-area: t5;
-}
-
-.t6 {
-  grid-area: t6;
-}
-
-
-.t7 {
-  grid-area: t7;
-}
-
-.t8 {
-  grid-area: t8;
-}
-
-
-.t9 {
-  grid-area: t9;
-}
-
-.t10 {
-  grid-area: t10;
-}
-
-
-.t11 {
-  grid-area: t11;
-}
-
-.t12 {
-  grid-area: t12;
-}
-
-.t13 {
-  grid-area: t13;
-}
-
-.t14 {
-  grid-area: t14;
-}
 
 .bordetable{
   border: 2px solid #57FA7B;
 
 }
-
-
-
 
 .contactcontenedor{
   background-image: url(https://dkvs.github.io/worskpace/img/contact-background.png);
@@ -644,23 +506,6 @@ grid-area: edu4;
     font-size: 1rem;
   }
 
-/* .footer{
-    width: 90%;
-	  margin: 20px auto;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-	  grid-template-rows: repeat(1, auto);
-    grid-template-areas:
-        "back";
-    gap: 10px;
-}
-
-
-footer {
-    color: blanchedalmond;
-    padding: 20px
-} */
-
 .back{
     grid-area: back;
 }
@@ -720,11 +565,6 @@ footer {
     border-radius: 0px;
   }
 
-  .gridedu{
-    display: flex;
-    flex-direction: column;
-  }
-
   .experiencecontenedor{
     display: flex;
     justify-content: center;
@@ -736,11 +576,6 @@ footer {
     height: auto;
 
   }
-
-  .ctfscontenedor{
-    display: none;
-  }
-
 
 .title{
   font-size: 15px;
@@ -768,7 +603,13 @@ footer {
     padding-left: 14px;  
     border-radius: 15px;
     margin-top: 10px;
-    margin-bottom: 10px;}
+    margin-bottom: 10px;
+  }
+
+  .gridedu{
+    display: flex;
+    flex-direction: column;
+  }
 
 
   .educationcontenedor{
@@ -862,15 +703,14 @@ footer {
   height: 100vh;
 }
 
+.hero {
+}
+
 .educationcontenedor {
   height: 100vh;
 }
 
 .aboutcoskillscontenedorntenedor {
-  height: 100vh;
-}
-
-.ctfscontenedor {
   height: 100vh;
 }
 
@@ -1015,6 +855,76 @@ footer {
 
   /*fin menu responsive */
 
+
+
+.tablactfs{
+  background-image: url(https://dkvs.github.io/worskpace/img/ctfs-background.png);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+
+  /* Estilos generales */
+  .table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    width: 85%;
+    background: linear-gradient(to top, #102638, 90%,#57FA7B);
+    color: white;
+    font-family: 'Fira Sans';
+    font-weight: 300;
+  }
+  
+  .fixed-table {
+    border-collapse: collapse;
+    /* Set a fixed width for the table or use a percentage as needed */
+    width: 100%; /* Table now takes 100% of its container's width */
+  }
+  
+  .fixed-table th,
+  .fixed-table td {
+    border: 1px solid #57FA7B;
+    padding: 8px;
+  }
+  
+  /* Establece el ancho de las columnas desplazables (ajusta el valor según tus necesidades) */
+  .fixed-table th:nth-child(3),
+  .fixed-table td:nth-child(3),
+  .fixed-table th:nth-child(4),
+  .fixed-table td:nth-child(4),
+  .fixed-table th:nth-child(5),
+  .fixed-table td:nth-child(5),
+  .fixed-table th:nth-child(6),
+  .fixed-table td:nth-child(6),
+  .fixed-table th:nth-child(7),
+  .fixed-table td:nth-child(7),
+  .fixed-table th:nth-child(8),
+  .fixed-table td:nth-child(8),
+  .fixed-table th:nth-child(9),
+  .fixed-table td:nth-child(9),
+  .fixed-table th:nth-child(10),
+  .fixed-table td:nth-child(10),
+  .fixed-table th:nth-child(11),
+  .fixed-table td:nth-child(11) {
+    min-width: 200px;
+  }
+  
+  /* Estilos de las columnas fijas */
+  .fixed-table th:nth-child(1),
+  .fixed-table td:nth-child(1) {
+    position: sticky;
+    background-color: #102638;
+    left: 0;
+    z-index: 1;
+    min-width: 100px;
+  }
+  
+  .fixed-table th:nth-child(2),
+  .fixed-table td:nth-child(2) {
+    left: 100px;
+  }
+  
 
 
 

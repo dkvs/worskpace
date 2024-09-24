@@ -186,6 +186,7 @@ body{
 
 .hero{
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   background-image: url('https://dkvs.github.io/worskpace/img/hero-background.png');
@@ -847,10 +848,6 @@ footer {
 }
 
 .experiencecontenedor {
-  height: 100vh;
-}
-
-.hero {
   height: 100vh;
 }
 

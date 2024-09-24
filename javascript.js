@@ -48,4 +48,19 @@ function scrollFunction() {
 
   }
 }
+const burger = document.querySelector("#burger-menu");
+const ul = document.querySelector("nav ul");
+const nav = document.querySelector("nav");
+
+
+
+// menu
+const buttonMenu = document.querySelector('#nav-mobile');
+const navMenu = document.querySelector('.nav-menu');
+
+buttonMenu.addEventListener('click', (e) => {
+  e.currentTarget.classList.toggle('nav-open');
+  navMenu.classList.toggle('open-menu');
+});
+
 

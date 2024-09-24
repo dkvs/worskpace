@@ -720,6 +720,11 @@ footer {
     border-radius: 0px;
   }
 
+  .gridedu{
+    display: flex;
+    flex-direction: column;
+  }
+
   .experiencecontenedor{
     display: flex;
     justify-content: center;

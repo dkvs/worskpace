@@ -760,7 +760,10 @@ footer {
     background: linear-gradient(167deg, #57FA7B, #102638 37%);
     color:white;
     padding-right: 14px;
-    padding-left: 14px;  }
+    padding-left: 14px;  
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;}
 
 
   .educationcontenedor{
@@ -783,7 +786,10 @@ footer {
     color:white;
     font-family: 'Fira Sans';
     padding-right: 14px;
-    padding-left: 14px;  }
+    padding-left: 14px;  
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;}
 
    
   .dot{
